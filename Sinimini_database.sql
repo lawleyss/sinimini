@@ -27,8 +27,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES
 (content_name, genre, director, release_year, runtime);
-SHOW VARIABLES LIKE 'secure_file_priv';
-DROP TABLE filmsandseries;
+
 
 
 
