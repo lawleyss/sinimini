@@ -1,4 +1,4 @@
-from OPP.Classes import Content
+import Content
 
 
 class User:
@@ -16,24 +16,6 @@ class User:
             print(f"Welcome back, {username}!")
         else:
             print("Invalid username or password.")
-
-contents = []
-
-with open('dataset.txt', mode='r', encoding='utf-8') as txt_file:
-    header = txt_file.readline().strip().split('\t')
-
-    for line in txt_file:
-        line_data = line.strip().split('\t')
-
-        content = Content(
-            name=line_data[0],
-            genre=line_data[1].split(','),  
-            director=line_data[2],
-            release_year=int(line_data[3]),
-            runtime=int(line_data[4])
-        )
-
-        contents.append(content)
 
 ''' 
 #Example usage
