@@ -1,4 +1,4 @@
-from OPP.Classes import CustomList
+import CustomList
 
 
 class UserContentStatus:
@@ -46,3 +46,28 @@ class UserContentStatus:
                 print(f"- {custom_list.name}: {len(custom_list.contents)} contents")
         else:
             print("No custom lists created yet.")
+
+    def remove_from_watched(self, content):
+        for item in self.watched:
+            if item[0] == content:
+                self.watched.remove(item)
+                print(f"Removed '{content.name}' from watched list.")
+                return
+        print(f"'{content.name}' not found in watched list.")
+
+    def remove_from_watch_later(self, content):
+        if content in self.watch_later:
+            self.watch_later.remove(content)
+            print(f"Removed '{content.name}' from watch later list.")
+        else:
+            print(f"'{content.name}' not found in watch later list.")
+
+    def rate_content(self, content, new_rating=None):
+        for index, item in enumerate(self.watched):
+            if item[0] == content:
+                if new_rating is None:
+                    new_rating = float(input(f"Please provide a new rating (0-10) for '{content.name}': "))
+                self.watched[index] = (content, new_rating)
+                print(f"Updated the rating for '{content.name}' to: {new_rating}")
+                return
+        print(f"'{content.name}' is not in the watched list, so it cannot be rated or re-rated.")
