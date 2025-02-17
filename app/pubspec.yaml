@@ -1,0 +1,36 @@
+name: app
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"  # Ensure correct SDK range
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^6.1.0  # Update to the latest version
+
+  flutter_localizations:  # This was incorrectly formatted
+    sdk: flutter
+
+  intl: any  # Required for localization
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0  # Ensure this version is compatible
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    - assets/images/
