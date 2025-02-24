@@ -58,7 +58,7 @@ class Library:
     
     def add_content(self, name, genre_input, director, release_year, runtime, file_path="dataset.txt"):
         if self.content_exists(name, release_year):
-            print(f"\nContent '{name}' ({release_year}) already exists in the library.")
+            print(f"\n Content '{name}' ({release_year}) already exists in the library.")
             return None
         genre = [g.strip() for g in genre_input.split(",")]
         

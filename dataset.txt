@@ -1002,4 +1002,3 @@ Nine Lives	Comedy,Family,Fantasy	Barry Sonnenfeld	2016	87
 Companion	Comedy,Sci-Fi,Thriller	Drew Hancock	2025	97
 The Witch: Part 1. The Subversion	Sci-Fi,Horror	Park Hoon-jung	2018	125
 Kill Boksoon	Crime,Action	Byun Sung-hyun	2023	137
-Movie Title	Action,Comedy	Director Name	2023	120
