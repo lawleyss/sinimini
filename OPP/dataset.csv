@@ -1,4 +1,4 @@
- content_name,genre,director,release_year,runtime
+content_name,genre,director,release_year,runtime
 Guardians of the Galaxy,"Action,Adventure,Sci-Fi",James Gunn,2014,121
 Prometheus,"Adventure,Mystery,Sci-Fi",Ridley Scott,2012,124
 Split,"Horror,Thriller",M. Night Shyamalan,2016,117
